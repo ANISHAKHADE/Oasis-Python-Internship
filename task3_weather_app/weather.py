@@ -13,7 +13,7 @@ def basic_weather(city):
     
 city=str(input("Enter city name:"))
 data=basic_weather(city)
-# print(data)
+
 
 if data is None:
     print("No data received from API")
