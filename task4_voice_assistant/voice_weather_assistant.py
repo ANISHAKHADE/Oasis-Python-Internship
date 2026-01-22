@@ -11,7 +11,6 @@ def stt():
 
     try:
         return r.recognize_google(audio)
-        # print("Recognized :" , text)
     except sr.UnknownValueError:
         print("Could not understand audio") 
     except sr.RequestError as e:
