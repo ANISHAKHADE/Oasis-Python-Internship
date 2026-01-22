@@ -17,7 +17,7 @@ data=basic_weather(city)
 
 if data is None:
     print("No data received from API")
-elif data['cod'] != 200: #str(data.get('cod'))
+elif data['cod'] != 200: 
     print("City not found...API error")
 else:
     city_name=data['name']
