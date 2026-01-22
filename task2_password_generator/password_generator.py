@@ -15,7 +15,7 @@ def pass_gen(n):
     if s:
         lib.append(string.punctuation)
     
-    # print(lib)
+ 
     if not lib:
         return "Select at least one option"
 
