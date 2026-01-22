@@ -21,7 +21,7 @@ def stt():
 
 import requests
 def basic_weather(city):
-    api_key="YOUR_API_KEY"
+    api_key="YOUR_API_KEY"  # Replace with your OpenWeatherMap API key
     base_url=f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
 
     try:
