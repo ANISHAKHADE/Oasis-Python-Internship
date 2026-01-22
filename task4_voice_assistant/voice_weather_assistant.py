@@ -49,11 +49,11 @@ if "weather" in text:
     if "in" in text:
         city = str(text.split("in")[1].strip())
         data=basic_weather(city)
-        # print( data )
+
         
         if data is None:
             print("No data received from API")
-        elif data['cod'] != 200: #str(data.get('cod'))
+        elif data['cod'] != 200: 
             print("City not found...API error")
         else:
             city_name=data['name']
@@ -72,7 +72,7 @@ if "weather" in text:
     else:
         print("Please say: weather in <city>") 
         city=None
-    # data =basic_weather(city)
+
     
 elif "exit"in text or "quit" in text:
     print("Exiting...")
