@@ -1,5 +1,3 @@
-
-
 def bmi_cal(height,weight):
     bmi = weight / (height**2)
     bmi=round(bmi,2)
